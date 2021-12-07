@@ -14,6 +14,7 @@ export const ProjectListScreerns = () => {
     name: "",
     personId: "",
   });
+  //泛型规范之后与param一致
   const debouncedParam = useDebounce(param, 200);
   const [list, setList] = useState([]);
   //访问list接口

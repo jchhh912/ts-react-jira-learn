@@ -13,7 +13,7 @@ export const cleanObject = (object: object) => {
   });
   return result;
 };
-
+//Hock 函数
 //页面加载时 只加载一次的函数
 export const useMount = (callback: () => void) => {
   useEffect(() => {
@@ -22,7 +22,7 @@ export const useMount = (callback: () => void) => {
   }, []);
 };
 //减少请求频率  //unknow 无法被读取 可使用any来返回  后续使用泛型规范
-export const useDebounce = (value: unknown, delay?: number): any => {
+export const useDebounce = <V,>(value: V, delay?: number) => {
   const [debounceValue, setDebounceValue] = useState(value);
   useEffect(() => {
     //每次value变化以后，设置一个定时器
