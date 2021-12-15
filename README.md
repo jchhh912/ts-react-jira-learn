@@ -21,7 +21,8 @@
 
 **注意两个.env 文件中变量名一定要是 REACT_APP_API_URL，不可自定义**
 
-`import { loadDevTools } from 'jira-dev-tool'
+```
+import { loadDevTools } from 'jira-dev-tool'
 loadDevTools(() =>
 ReactDOM.render(
 <React.StrictMode>
@@ -29,8 +30,7 @@ ReactDOM.render(
 </React.StrictMode>,
 document.getElementById('root')
 ))
-
-`
+```
 
 ## 登录注册实现，并将保存到 localStorage
 
