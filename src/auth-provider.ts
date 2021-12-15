@@ -1,4 +1,4 @@
-//在真实环境下，如果使用firebase第三方auth服务，不需开发
+//测试使用登录，注册，注销，在真实环境下，如果使用firebase第三方auth服务，不需开发
 import { User } from 'screens/project-list/search-panel'
 
 const localStorageKey = '__auth_privider_token__'
@@ -20,6 +20,9 @@ export const login = (data: { username: string; password: string }) => {
   }).then(async response => {
     if (response.ok) {
       return handleUserResponse(await response.json())
+    } else {
+      //返回一个报错
+      return Promise.reject(data)
     }
   })
 }
@@ -34,7 +37,11 @@ export const register = (data: { username: string; password: string }) => {
   }).then(async response => {
     if (response.ok) {
       return handleUserResponse(await response.json())
+    } else {
+      //返回一个报错
+      return Promise.reject(data)
     }
   })
 }
-export const logout = () => window.localStorage.removeItem(localStorageKey)
+export const logout = async () =>
+  window.localStorage.removeItem(localStorageKey)

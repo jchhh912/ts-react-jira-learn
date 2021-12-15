@@ -1,16 +1,16 @@
-import React from "react";
-import { User } from "./search-panel";
+import React from 'react'
+import { User } from './search-panel'
 
 interface Project {
-  id: string;
-  name: string;
-  personId: string;
-  pin: boolean;
-  organization: string;
+  id: string
+  name: string
+  personId: string
+  pin: boolean
+  organization: string
 }
 interface ListProps {
-  list: Project[];
-  users: User[];
+  list: Project[]
+  users: User[]
 }
 export const List = ({ list, users }: ListProps) => {
   return (
@@ -26,11 +26,11 @@ export const List = ({ list, users }: ListProps) => {
           <tr key={project.id}>
             <td>{project.name}</td>
             <td>
-              {users.find(user => user.id === project.personId)?.name || "未知"}
+              {users.find(user => user.id === project.personId)?.name || '未知'}
             </td>
           </tr>
         ))}
       </tbody>
     </table>
-  );
-};
+  )
+}
