@@ -19,6 +19,7 @@
     public 中会有一个mockServiceWorker.js
     在index.tsx添加引用
     `import { loadDevTools } from 'jira-dev-tool'
+    **注意两个.env文件中变量名一定要是REACT_APP_API_URL，不可自定义**
 
 loadDevTools(() =>
 ReactDOM.render(

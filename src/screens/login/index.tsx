@@ -1,6 +1,6 @@
 import React, { FormEvent } from 'react'
 
-const apiUrl = process.env.REACT_APP_API_URl
+const apiUrl = process.env.REACT_APP_API_URL
 
 export const LoginScreen = () => {
   const login = (param: { username: string; password: string }) => {
