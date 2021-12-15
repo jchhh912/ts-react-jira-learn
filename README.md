@@ -12,3 +12,20 @@
     配置在项目中需要进入 packge.json 中 scripts
     添加"json-server": "json-server **json_server_mock**/db.json --watch --port 3001"
     测试 npm run json-server
+
+## 使用开发工具 分布式 mock 接口
+
+    npm add jira-dev-tool -d
+    public 中会有一个mockServiceWorker.js
+    在index.tsx添加引用
+    `import { loadDevTools } from 'jira-dev-tool'
+
+loadDevTools(() =>
+ReactDOM.render(
+<React.StrictMode>
+<App />
+</React.StrictMode>,
+document.getElementById('root')
+)
+)
+`
