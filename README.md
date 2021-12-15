@@ -30,3 +30,5 @@ document.getElementById('root')
 )
 )
 `
+
+## 登录注册实现，并将保存到 localStorage
