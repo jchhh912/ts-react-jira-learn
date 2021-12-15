@@ -18,17 +18,20 @@
     npm add jira-dev-tool -d
     public 中会有一个mockServiceWorker.js
     在index.tsx添加引用
-    `import { loadDevTools } from 'jira-dev-tool'
-    **注意两个.env文件中变量名一定要是REACT_APP_API_URL，不可自定义**
 
+**注意两个.env 文件中变量名一定要是 REACT_APP_API_URL，不可自定义**
+
+`import { loadDevTools } from 'jira-dev-tool'
 loadDevTools(() =>
 ReactDOM.render(
 <React.StrictMode>
 <App />
 </React.StrictMode>,
 document.getElementById('root')
-)
-)
+))
+
 `
 
 ## 登录注册实现，并将保存到 localStorage
+
+## context 全局数据管理
