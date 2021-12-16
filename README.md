@@ -35,3 +35,7 @@ document.getElementById('root')
 ## 5.3 登录注册实现，并将保存到 localStorage
 
 ## 5.4context 全局数据管理
+
+## 5.5 用 useAuth 切换登录与非登录状态
+
+## 5.6 用 fetch 抽象通用 HTTP 请求方法，增强通用性

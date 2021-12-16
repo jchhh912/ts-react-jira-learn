@@ -1,11 +1,23 @@
 import React, { ReactNode, useState } from 'react'
 import * as auth from 'auth-provider'
 import { User } from 'screens/project-list/search-panel'
+import { http } from 'utils/http'
+import { useMount } from 'utils'
 
 //定义一个接受类
 interface AuthForm {
   username: string
   password: string
+}
+//初始化用户,去查找token  保持登录状态
+const bootstapUser = async () => {
+  let user = null
+  const token = auth.getToken()
+  if (token) {
+    const data = await http('me', { token })
+    user = data.user
+  }
+  return user
 }
 //指定泛型类型 创建Context
 const AuthContext = React.createContext<
@@ -29,6 +41,10 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const register = (from: AuthForm) => auth.register(from).then(setUser)
   //通过在logout中加async 返回一个param
   const logout = () => auth.logout().then(() => setUser(null))
+  //页面加载时调用初始化
+  useMount(() => {
+    bootstapUser().then(setUser)
+  })
   return (
     <AuthContext.Provider
       children={children}
