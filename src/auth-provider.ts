@@ -1,8 +1,9 @@
 //测试使用登录，注册，注销，在真实环境下，如果使用firebase第三方auth服务，不需开发
 import { User } from 'screens/project-list/search-panel'
 
-const localStorageKey = '__auth_privider_token__'
+const localStorageKey = '__auth_provider_token__'
 const apiUrl = process.env.REACT_APP_API_URL
+
 export const getToken = () => window.localStorage.getItem(localStorageKey)
 
 export const handleUserResponse = ({ user }: { user: User }) => {
