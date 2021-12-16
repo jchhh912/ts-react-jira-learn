@@ -39,3 +39,5 @@ document.getElementById('root')
 ## 5.5 用 useAuth 切换登录与非登录状态
 
 ## 5.6 用 fetch 抽象通用 HTTP 请求方法，增强通用性
+
+## 5.7 用 useHttp 管理 JWT 和登录状态，保持登录状态
