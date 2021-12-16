@@ -1,17 +1,16 @@
-import React from "react";
-import "./App.css";
-// import { ProjectListScreerns } from "screens/project-list";
-// import { TsReactTese } from "utils/try-use-array";
-import { LoginScreen } from "screens/login";
+import { AuthenticaedApp } from 'authenticated-app'
+import { useAuth } from 'context/auth-context'
+import React from 'react'
+import { UnauthenticatedApp } from 'unauthenticated-app'
+import './App.css'
 
 function App() {
+  const { user } = useAuth()
   return (
     <div className="App">
-      {/* <TsReactTese />
-      <ProjectListScreerns /> */}
-      <LoginScreen />
+      {user ? <AuthenticaedApp /> : <UnauthenticatedApp />}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
