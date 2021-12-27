@@ -41,3 +41,29 @@ document.getElementById('root')
 ## 5.6 用 fetch 抽象通用 HTTP 请求方法，增强通用性
 
 ## 5.7 用 useHttp 管理 JWT 和登录状态，保持登录状态
+
+## 5.8 TS 的联合类型，Paritl，Omit，Types-Pick，的实现使用等
+
+## 5.9 安装使用 Ant 库
+
+1> 安装 Ant yarn add antd
+2> 在入口 index.tsx 引入
+
+`import 'antd/dist/antd.less'`
+3> 自定义主题 yarn add @craco/craco
+4>修改配置文件
+
+```
+/* package.json */
+"scripts": {
+-   "start": "react-scripts start",
+-   "build": "react-scripts build",
+-   "test": "react-scripts test",
++   "start": "craco start",
++   "build": "craco build",
++   "test": "craco test",
+}
+```
+
+    5>配置主题  yarn add craco-less
+    5> 创建craco.config.js
