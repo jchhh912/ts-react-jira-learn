@@ -42,9 +42,11 @@ document.getElementById('root')
 
 ## 5.7 用 useHttp 管理 JWT 和登录状态，保持登录状态
 
-## 5.8 TS 的联合类型，Paritl，Omit，Types-Pick，的实现使用等
+## 5.8 TS 的联合类型
 
-## 5.9 安装使用 Ant 库
+## 5.9Paritl，Omit，Types-Pick，的实现使用等
+
+## 6.1 安装使用 Ant 库
 
 1> 安装 Ant yarn add antd
 2> 在入口 index.tsx 引入
@@ -67,3 +69,9 @@ document.getElementById('root')
 
     5>配置主题  yarn add craco-less
     5> 创建craco.config.js
+
+## 6.2 了解 CSS-in-JS 方案的优点
+
+## 6.3 Emotion 的安装和使用
+
+    yarn add @emotion/react @emotion/styled

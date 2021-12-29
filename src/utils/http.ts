@@ -80,7 +80,7 @@ type Person = {
   name: string
   age: number
 }
-//partial 当person不完整时，也能获取到值
+//partial 当不完全获取person时，也能获取到值
 const xiaoMing: Partial<Person> = {
   age: 8
 }
