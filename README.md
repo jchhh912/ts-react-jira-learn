@@ -75,3 +75,11 @@ document.getElementById('root')
 ## 6.3 Emotion 的安装和使用
 
     yarn add @emotion/react @emotion/styled
+
+## 6.4 使用 Grid 和 flexbox 布局
+
+## 6.5 使用 CSS in JS 自定义组件
+
+## 6.6 完善界面
+
+    yarn add dayjs 处理时间的库
