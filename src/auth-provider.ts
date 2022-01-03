@@ -22,12 +22,10 @@ export const login = (data: { username: string; password: string }) => {
     if (response.ok) {
       return handleUserResponse(await response.json())
     } else {
-      //返回一个报错
       return Promise.reject(data)
     }
   })
 }
-
 export const register = (data: { username: string; password: string }) => {
   return fetch(`${apiUrl}/register`, {
     method: 'POST',
@@ -39,10 +37,10 @@ export const register = (data: { username: string; password: string }) => {
     if (response.ok) {
       return handleUserResponse(await response.json())
     } else {
-      //返回一个报错
       return Promise.reject(data)
     }
   })
 }
+
 export const logout = async () =>
   window.localStorage.removeItem(localStorageKey)

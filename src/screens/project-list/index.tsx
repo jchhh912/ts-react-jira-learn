@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { cleanObject, useDebounce, useMount } from 'utils'
 import { List } from './list'
 import { SearchPanel } from './search-panel'
@@ -29,7 +29,7 @@ export const ProjectListScreen = () => {
     <Container>
       <h1>项目列表</h1>
       <SearchPanel users={users} param={param} setParam={setParam} />
-      <List users={users} list={list} />
+      <List users={users || {}} list={list} />
     </Container>
   )
 }

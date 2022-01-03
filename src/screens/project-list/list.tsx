@@ -1,6 +1,5 @@
 import { Table } from 'antd'
 import dayjs from 'dayjs'
-import React from 'react'
 import { User } from './search-panel'
 
 interface Project {
@@ -11,6 +10,7 @@ interface Project {
   organization: string
   created: number
 }
+
 interface ListProps {
   list: Project[]
   users: User[]
@@ -18,6 +18,7 @@ interface ListProps {
 export const List = ({ list, users }: ListProps) => {
   return (
     <Table
+      rowKey={'id'}
       pagination={false}
       columns={[
         {

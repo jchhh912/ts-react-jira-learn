@@ -1,6 +1,5 @@
 import { useAuth } from 'context/auth-context'
-import React, { FormEvent } from 'react'
-import { Button, Form, Input } from 'antd'
+import { Form, Input } from 'antd'
 import { LongButton } from 'unauthenticated-app'
 export const LoginScreen = () => {
   const { login } = useAuth()
