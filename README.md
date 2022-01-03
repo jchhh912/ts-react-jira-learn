@@ -83,3 +83,8 @@ document.getElementById('root')
 ## 6.6 完善界面
 
     yarn add dayjs 处理时间的库
+
+## 6.7 升级工具 清理错误日志
+
+yarn add jira-dev-tool@next
+yara add react-query
