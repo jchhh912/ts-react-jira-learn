@@ -88,3 +88,9 @@ document.getElementById('root')
 
 yarn add jira-dev-tool@next
 yara add react-query
+
+## 7.1 给页面添加 Loading 和 Error 状态
+
+## 7.2 用高级 Hook-useAsync 统一处理 Loading 和 Error
+
+## 7.3 登录注册时 Loading 和 Error 状态处理
