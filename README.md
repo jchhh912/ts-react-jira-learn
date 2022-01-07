@@ -94,3 +94,5 @@ yara add react-query
 ## 7.2 用高级 Hook-useAsync 统一处理 Loading 和 Error
 
 ## 7.3 登录注册时 Loading 和 Error 状态处理
+
+# 7.4 使用 useAsync 来获取 me 接口的用户信息，添加错误页
