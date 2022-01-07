@@ -95,4 +95,10 @@ yara add react-query
 
 ## 7.3 登录注册时 Loading 和 Error 状态处理
 
-# 7.4 使用 useAsync 来获取 me 接口的用户信息，添加错误页
+## 7.4 使用 useAsync 来获取 me 接口的用户信息，添加错误页
+
+## 7.5 实现 Error Boundaries 捕获边界错误
+
+    yarn build 发布
+    安装全局运行 yarn global sever  如果无法运行serve命令需要将yarn global/bin地址添加到环境变量
+    server -s build
