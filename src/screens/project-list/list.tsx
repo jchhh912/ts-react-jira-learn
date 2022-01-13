@@ -1,4 +1,3 @@
-import React from 'react'
 import { User } from 'screens/project-list/search-panel'
 import { Table } from 'antd'
 import dayjs from 'dayjs'
