@@ -34,7 +34,7 @@ document.getElementById('root')
 
 ## 5.3 登录注册实现，并将保存到 localStorage
 
-## 5.4context 全局数据管理
+## 5.4 context 全局数据管理
 
 ## 5.5 用 useAuth 切换登录与非登录状态
 
@@ -104,3 +104,4 @@ yara add react-query
     server -s build
 
 ## 8.1 学习 useRef 与 Hook 闭包详解
+    useRef：在函数组件中获取真实dom元素对象或者是组件对象
